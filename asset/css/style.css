@@ -115,15 +115,15 @@ text-decoration-skip-ink: none;
 .layer {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0%;
     width: 100%;
     height: 100%;
-    background-color: #b9b9b9;
+    background-color: #d6d5d5;
     opacity: 0.5;
-    display: none;
     z-index: 9;
+    display: none;
 }
 
 .layer.active {
-    display: block;
+  display: block;
 }
