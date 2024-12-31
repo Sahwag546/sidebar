@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="/asset/css/style.css">
+</head>
+
+<body>
+    <section class="over">
+        <div class="layer" id="layer"></div>
+        <div class="sidebar open" id="sidebar">
+            <div class="sidebar-content">
+                <div class="cross">
+                    <img src="./asset/image/svg/cross.svg" alt="cross" id="close-btn">
+                </div>
+                <h3>Sidebar</h3>
+                <a href="#" class="sidebar-link">Link 1</a>
+                <a href="#" class="sidebar-link">Link 2</a>
+                <a href="#" class="sidebar-link">Link 3</a>
+                <a href="#" class="sidebar-link">Link 4</a>
+                <a href="#" class="sidebar-link">Link 5</a>
+            </div>
+        </div>
+        <div class="d-flex flex-col position-center">
+            <h1 class="heading">Sidebar</h1>
+            <button id="open-btn" class="btn">Open Sidebar</button>
+        </div>
+    </section>
+<script>
+    
+const openbtn = document.getElementById('open-btn'),
+      closebtn = document.getElementById('close-btn'),
+      sidebar = document.getElementById('sidebar'),
+      layer = document.getElementById('layer');
+
+openbtn.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+    layer.classList.add('active');
+});
+
+closebtn.addEventListener('click', () => {
+    sidebar.classList.add('open');
+    layer.classList.remove('active');
+});
+
+// Click on layer is closing side bar
+layer.addEventListener('click', () => {
+    sidebar.classList.add('open');
+    layer.classList.remove('active');
+});
+</script>
+</body>
+
+</html>
