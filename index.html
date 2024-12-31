@@ -29,13 +29,43 @@
             <button id="open-btn" class="btn">Open Sidebar</button>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <h1>Radial Code</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, repellat accusantium. Dignissimos, delectus consequuntur ullam ab at deleniti accusantium numquam! Eos voluptatem qui error ipsa doloremque illum aut! Vel, ipsum.</p>
+                    </div>
+                </div>
+                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <h1>Radial Code</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, repellat accusantium. Dignissimos, delectus consequuntur ullam ab at deleniti accusantium numquam! Eos voluptatem qui error ipsa doloremque illum aut! Vel, ipsum.</p>
+                    </div>
+                </div>
+                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <h1>Radial Code</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, repellat accusantium. Dignissimos, delectus consequuntur ullam ab at deleniti accusantium numquam! Eos voluptatem qui error ipsa doloremque illum aut! Vel, ipsum.</p>
+                    </div>
+                </div>
+                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <h1>Radial Code</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, repellat accusantium. Dignissimos, delectus consequuntur ullam ab at deleniti accusantium numquam! Eos voluptatem qui error ipsa doloremque illum aut! Vel, ipsum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 <script>
     
 const openbtn = document.getElementById('open-btn'),
       closebtn = document.getElementById('close-btn'),
       sidebar = document.getElementById('sidebar'),
       layer = document.getElementById('layer');
-
+      
 openbtn.addEventListener('click', () => {
     sidebar.classList.remove('open');
     layer.classList.add('active');
@@ -46,7 +76,11 @@ closebtn.addEventListener('click', () => {
     layer.classList.remove('active');
 });
 
-
+// Click on layer is closing side bar
+// layer.addEventListener('click', () => { 
+//     sidebar.classList.add('open');
+//     layer.classList.remove('active');
+// });
 </script>
 </body>
 

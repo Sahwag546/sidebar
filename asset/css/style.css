@@ -3,9 +3,10 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
 .sidebar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 286px;
@@ -126,4 +127,46 @@ text-decoration-skip-ink: none;
 
 .layer.active {
   display: block;
+}
+/* section-2 details */
+.container{
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.col-12{
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (min-width:575.98px) {
+  .col-sm-6{
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+@media (min-width:767.98px) {
+  .col-md-4{
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+@media (min-width:991.98px) {
+  .col-lg-3{
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
